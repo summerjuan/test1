@@ -14,7 +14,7 @@ public class Driver {
 	public AndroidDriver getDriver(){
 		File classpathRoot=new File(System.getProperty("user.dir"));//获得程序当前路径
 		File appDir=new File(classpathRoot,"apps");
-		File app=new File(appDir,"GLive_debug_1.8.0_dev_37_svn84501_200_staging_2018_01_03.apk");
+		File app=new File(appDir,"GLive_debug_1.8.0_dev_37_svn86345_200_staging_2018_01_11.apk");
 		//判断apk是否存在
 		if(!app.exists()) {
 			System.out.println("本次需要安装的apk不存在");

@@ -1,11 +1,33 @@
 package golive.element;
 
-public class SignInPageElement {
-	//签到框中的签到标题
-	////android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.TextView[1]
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
+import io.appium.java_client.android.AndroidDriver;
+
+public class SignInPageElement {
+	
 	//签到按钮
-	////android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.TextView[2]
+	public WebElement SignInButton(AndroidDriver driver) {
+		return driver.findElement(By.xpath("//android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.TextView[2]"));
+		
+	}
+	
+	//开启按钮
+	public WebElement SignInOpenButton(AndroidDriver driver) {
+		return driver.findElement(By.xpath("//android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.TextView[2]"));
+	}
+	
+	//确认按钮
+	public WebElement SignInSureButton(AndroidDriver driver) {
+		return driver.findElement(By.xpath("//android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.TextView[2]"));
+		
+	} 
+   
+   
+	
+
+	
 
 
 }

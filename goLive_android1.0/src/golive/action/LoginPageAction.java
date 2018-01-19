@@ -10,6 +10,10 @@ public class LoginPageAction {
 		element.click();
 	}
 	
+	public void tap(AndroidDriver driver,int x,int y) {
+		driver.tap(1, x, y,500);
+	}
+	
 	//输入操作
 	public void input(WebElement element,String inputKey) {
 		element.sendKeys(inputKey);
