@@ -2,6 +2,7 @@ package golive.action;
 
 import org.openqa.selenium.WebElement;
 
+import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 
 public class LoginPageAction {
@@ -17,6 +18,11 @@ public class LoginPageAction {
 	//输入操作
 	public void input(WebElement element,String inputKey) {
 		element.sendKeys(inputKey);
+	}
+	
+	//输入复制操作
+	public void inputCopy(MobileElement element,String inputKey) {
+		element.setValue(inputKey);
 	}
 	
 	//向上滑动操作

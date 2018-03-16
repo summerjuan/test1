@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite1" parallel="false">
+  <test name="Test1">
+    <classes>
+      <class name="golive.test.Test2"/>
+      <class name="golive.test.Test3"/>
+    </classes>
+    
+    <listeners>
+     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+     <listenner class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+  </test>
+
+</suite>
+
